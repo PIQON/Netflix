@@ -1,0 +1,16 @@
+.router-link {
+  display: inline-block;
+  text-decoration: none;
+  &--not-found {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-300);
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

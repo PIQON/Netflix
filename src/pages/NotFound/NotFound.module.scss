@@ -1,0 +1,75 @@
+@use './../../scss/abstracts/mixins' as *;
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    @include flex-mother(row, center, flex-start);
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: var(--clr-neutral-300);
+  }
+  &__content {
+    position: relative;
+    flex-grow: 1;
+    background-image: url('./../../assets/images/not-found.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 1;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  &__title {
+    margin-top: 8rem;
+    font-size: 4rem;
+    text-shadow: 0 1px 2px var(--clr-universal-300);
+    @include media(30rem) {
+      font-size: 2.75rem;
+    }
+  }
+  &__description {
+    font-size: 1.44rem;
+    margin-top: 3rem;
+    line-height: 1.5;
+    @include media(30rem) {
+      font-size: 1.2rem;
+    }
+  }
+  &__typography {
+    @include flex-mother(column);
+    position: relative;
+    z-index: 1;
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--clr-neutral-400);
+    @include media(30rem) {
+      padding: 0 1rem;
+    }
+  }
+  &__error {
+    position: relative;
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 1.728rem;
+    &--line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-color: var(--clr-universal-400);
+    }
+    &--title {
+      font-weight: 200;
+    }
+  }
+}

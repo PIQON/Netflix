@@ -1,5 +1,10 @@
 {
   "translation": {
+    "main": {
+      "title": "Filmy, seriale i wiele więcej bez ograniczeń",
+      "description": "Oglądaj wszędzie. Anuluj w każdej chwili.",
+      "addition": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto."
+    },
     "links": {
       "login": "Zaloguj się"
     },

@@ -1,5 +1,10 @@
 {
   "translation": {
+    "main": {
+      "title": "Unlimited movies, TV shows, and more",
+      "description": "Watch anywhere. Cancel anytime.",
+      "addition": "Ready to watch? Enter your email to create or restart your membership."
+    },
     "links": {
       "login": "Sign In"
     },

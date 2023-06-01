@@ -1,5 +1,8 @@
 {
   "translation": {
+    "links": {
+      "login": "Zaloguj się"
+    },
     "notFound": {
       "title": "Nie ta strona?",
       "description": "Niestety, nie możemy znaleźć tej strony. Na stronie głównej serwisu znajdziesz mnóstwo filmów, seriali i programów do obejrzenia.",

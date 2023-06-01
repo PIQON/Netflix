@@ -1,0 +1,16 @@
+@use './../../../scss/abstracts/mixins' as *;
+
+.nav {
+  @include flex-mother(row, center, space-between);
+  padding: 2rem;
+  @include media(30rem) {
+    padding: 2rem 0.5rem;
+  }
+  &__actions {
+    @include flex-mother(row, center, center);
+    gap: 2rem;
+    @include media(30rem) {
+      gap: 0.5rem;
+    }
+  }
+}

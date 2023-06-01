@@ -13,4 +13,15 @@
       opacity: 0.75;
     }
   }
+  &--login {
+    background-color: var(--clr-universal-400);
+    color: var(--clr-neutral-400);
+    padding: 0.6rem 1.25rem;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+    }
+  }
 }

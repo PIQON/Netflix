@@ -3,6 +3,7 @@ import { Wrapper } from '../../features/UI/Wrapper/Wrapper';
 import { MainNavigation } from './MainNavigation/MainNavigation';
 import { useTranslation } from 'react-i18next';
 import { Newsletter } from '../../features/Newsletter/Newsletter';
+import { ZPattern } from '../../features/Z-Pattern/Z-Pattern';
 
 export const Main = () => {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ export const Main = () => {
           </div>
         </Wrapper>
       </header>
+      <ZPattern />
     </div>
   );
 };

@@ -20,6 +20,24 @@
     "form": {
       "emailRequired": "Adres e-mail jest wymagany!",
       "emailValid": "Wprowadź prawidłowy adres e-mail"
+    },
+    "zpattern": {
+      "watch": {
+        "title": "Oglądaj na telewizorze",
+        "description": "Oglądaj na telewizorach Smart TV, konsolach PlayStation i Xbox, odtwarzaczach Chromecast, Apple TV oraz Blu-ray i nie tylko."
+      },
+      "download": {
+        "title": "Pobierz ulubione tytuły i oglądaj offline",
+        "description": "Zapisz ulubione tytuły, aby zawsze mieć coś do obejrzenia."
+      },
+      "everywhere": {
+        "title": "Oglądaj wszędzie",
+        "description": "Oglądaj filmy, seriale i programy bez ograniczeń na telefonie, tablecie, laptopie i telewizorze."
+      },
+      "kids": {
+        "title": "Utwórz profile dla dzieci",
+        "description": "Pozwól dzieciom przeżywać przygody w towarzystwie uwielbianych bohaterów — w specjalnej sekcji serwisu oferowanej bezpłatnie w ramach członkostwa."
+      }
     }
   }
 }

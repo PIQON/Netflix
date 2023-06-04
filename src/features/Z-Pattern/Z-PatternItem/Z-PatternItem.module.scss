@@ -1,0 +1,75 @@
+@use './../../../scss/abstracts/mixins' as *;
+
+.container {
+  border-bottom: 0.5rem solid rgb(35, 35, 35);
+}
+
+.z-pattern-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 3rem 2rem;
+  gap: 3rem;
+  min-height: 25rem;
+  @include media(50rem) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  &--download &__media,
+  &--kids &__media {
+    order: -1;
+  }
+
+  &--everywhere &__video {
+    max-width: 61%;
+    top: 35%;
+  }
+
+  &__content {
+    color: var(--clr-neutral-400);
+  }
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  &__media {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    @include media(50rem) {
+      height: 21.875rem;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  &__video {
+    position: absolute;
+    top: 48%;
+    left: 49.5%;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

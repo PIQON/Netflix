@@ -11,6 +11,7 @@
     url('./../../assets/images/hero-large.png');
   background-size: cover;
   background-position: center;
+  border-bottom: 0.5rem solid rgb(35, 35, 35);
   @include media(30rem) {
     min-height: 30rem;
   }

@@ -1,0 +1,23 @@
+@use './../../scss/abstracts/mixins' as *;
+
+.newsletter {
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.44rem;
+    line-height: 1.5;
+    @include media(42rem) {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__form {
+    height: 3.5rem;
+    @include flex-mother();
+    gap: 1rem;
+    @include media(42rem) {
+      height: 9.5rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}

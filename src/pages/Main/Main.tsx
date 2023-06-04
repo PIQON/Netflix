@@ -2,6 +2,7 @@ import style from './Main.module.scss';
 import { Wrapper } from '../../features/UI/Wrapper/Wrapper';
 import { MainNavigation } from './MainNavigation/MainNavigation';
 import { useTranslation } from 'react-i18next';
+import { Newsletter } from '../../features/Newsletter/Newsletter';
 
 export const Main = () => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ export const Main = () => {
             <p className={style['header__description']}>
               {t('main.description')}
             </p>
-            <p className={style['header__addition']}>{t('main.addition')}</p>
+            <Newsletter />
           </div>
         </Wrapper>
       </header>

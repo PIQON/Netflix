@@ -2,8 +2,11 @@
   "translation": {
     "main": {
       "title": "Unlimited movies, TV shows, and more",
-      "description": "Watch anywhere. Cancel anytime.",
-      "addition": "Ready to watch? Enter your email to create or restart your membership."
+      "description": "Watch anywhere. Cancel anytime."
+    },
+    "newsletter": {
+      "title": "Zaczynamy oglądać? Wprowadź adres e‑mail, aby utworzyć lub odnowić konto.",
+      "button": "Start >"
     },
     "links": {
       "login": "Sign In"

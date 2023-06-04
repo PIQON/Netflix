@@ -1,0 +1,49 @@
+@use './../../../scss/abstracts/mixins' as *;
+
+.form-item {
+  position: relative;
+  &--newsletter {
+    border-radius: 4px;
+    height: 100%;
+    width: 50%;
+    @include media(42rem) {
+      width: 80%;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translate(-50%, -50%);
+    color: var(--clr-newsletter-text);
+    transition: all 0.3s;
+  }
+
+  &__input {
+    height: 100%;
+    width: 100%;
+    padding-left: 1rem;
+    border: 1px solid var(--clr-newsletter-border);
+    background-color: var(--clr-newsletter);
+    border-radius: 6px;
+    font-size: 1.44rem;
+    color: var(--color-primary-200);
+    font-size: 1rem;
+    font-family: inherit;
+  }
+
+  &__error {
+    @include flex-mother(row, center, flex-start);
+    gap: 0.15rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 0.833rem;
+    color: var(--clr-universal-400);
+  }
+  &__input:focus + &__label,
+  &__input:invalid + &__label {
+    top: 25%;
+    left: 2.5rem;
+    font-size: 0.576rem;
+  }
+}

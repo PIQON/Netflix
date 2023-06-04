@@ -1,0 +1,15 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  &--newsletter {
+    color: var(--clr-neutral-400);
+    background-color: var(--clr-universal-400);
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0 2rem;
+    height: 100%;
+    font-size: 1.44rem;
+  }
+}

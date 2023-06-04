@@ -16,6 +16,10 @@
       "description": "Niestety, nie możemy znaleźć tej strony. Na stronie głównej serwisu znajdziesz mnóstwo filmów, seriali i programów do obejrzenia.",
       "link": "Strona główna Netflix",
       "error": "Kod błędu"
+    },
+    "form": {
+      "emailRequired": "Adres e-mail jest wymagany!",
+      "emailValid": "Wprowadź prawidłowy adres e-mail"
     }
   }
 }

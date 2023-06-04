@@ -10,7 +10,6 @@ type FormElementProps = {
   type: InputType;
   placeholder?: string;
   error?: string;
-  onChange?: () => void;
   className?: string;
 };
 
@@ -29,9 +28,11 @@ export const FormElement = forwardRef<HTMLInputElement, FormElementProps>(
         <label htmlFor={id} className={style['form-item__label']}>
           {label}
         </label>
-        <p className={style['form-item__error']}>
-          <ErrorLogo /> Adres e-mail jest wymagany.
-        </p>
+        {error && (
+          <p className={style['form-item__error']}>
+            <ErrorLogo /> {error}
+          </p>
+        )}
       </div>
     );
   }

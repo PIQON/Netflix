@@ -16,6 +16,10 @@
       "description": "Sorry, we can't find this page. On the homepage of the site you will find plenty of movies, series and programs to watch.",
       "link": "Home Netflix",
       "error": "Error code"
+    },
+    "form": {
+      "emailRequired": "Email is required!",
+      "emailValid": "Please enter a valid email address"
     }
   }
 }

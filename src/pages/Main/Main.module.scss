@@ -6,7 +6,7 @@
 
 .header {
   position: relative;
-  min-height: 50rem;
+  min-height: 40rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url('./../../assets/images/hero-large.png');
   background-size: cover;
@@ -17,7 +17,7 @@
   &__content {
     @include flex-mother(column, center, center);
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
     gap: 1.5rem;
     color: var(--clr-neutral-400);
     @include media(30rem) {

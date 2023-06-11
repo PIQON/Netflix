@@ -1,0 +1,35 @@
+@use './../../../scss/abstracts/mixins' as *;
+
+.faq-item {
+  background-color: rgb(45, 45, 45);
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(78, 78, 78);
+  }
+
+  &--expanded &__icon {
+    transform: rotate(45deg);
+  }
+
+  &__title {
+    font-size: 1.44rem;
+    text-align: left;
+    @include media(50rem) {
+      font-size: 1rem;
+    }
+  }
+  &__icon {
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+  }
+  &__description {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-top: 0.1px solid #000;
+    text-align: left;
+    @include media(50rem) {
+      font-size: 0.833rem;
+    }
+  }
+}

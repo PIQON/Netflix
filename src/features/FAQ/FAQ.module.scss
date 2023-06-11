@@ -1,0 +1,20 @@
+@use './../../scss/abstracts/mixins' as *;
+
+.faq {
+  padding: 3rem;
+  color: var(--clr-neutral-400);
+  @include media(50rem) {
+    padding: 1rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  &__items {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

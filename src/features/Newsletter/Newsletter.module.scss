@@ -1,10 +1,13 @@
 @use './../../scss/abstracts/mixins' as *;
 
 .newsletter {
+  padding: 1rem;
   &__title {
     margin-bottom: 1rem;
     font-size: 1.44rem;
     line-height: 1.5;
+    color: var(--clr-neutral-400);
+    text-align: center;
     @include media(42rem) {
       font-size: 1.2rem;
       margin-bottom: 2rem;

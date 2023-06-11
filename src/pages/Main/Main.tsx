@@ -4,6 +4,7 @@ import { MainNavigation } from './MainNavigation/MainNavigation';
 import { useTranslation } from 'react-i18next';
 import { Newsletter } from '../../features/Newsletter/Newsletter';
 import { ZPattern } from '../../features/Z-Pattern/Z-Pattern';
+import { FAQ } from '../../features/FAQ/FAQ';
 
 export const Main = () => {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ export const Main = () => {
         </Wrapper>
       </header>
       <ZPattern />
+      <FAQ />
     </div>
   );
 };

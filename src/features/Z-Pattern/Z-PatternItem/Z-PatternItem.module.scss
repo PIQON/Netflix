@@ -19,6 +19,9 @@
   &--download &__media,
   &--kids &__media {
     order: -1;
+    @include media(50rem) {
+      order: 1;
+    }
   }
 
   &--everywhere &__video {

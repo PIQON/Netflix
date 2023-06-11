@@ -12,9 +12,17 @@
     border-radius: 4px;
     padding: 0 2rem;
     height: 100%;
-    font-size: 1.44rem;
+    font-size: 1.2rem;
     @include media(42rem) {
       padding: 1rem 2rem;
     }
+  }
+  &--faq {
+    @include flex-mother(row, center, space-between);
+    gap: 1rem;
+    padding: 1.6rem 1rem;
+    width: 100%;
+    min-height: 3rem;
+    color: var(--clr-neutral-400);
   }
 }
